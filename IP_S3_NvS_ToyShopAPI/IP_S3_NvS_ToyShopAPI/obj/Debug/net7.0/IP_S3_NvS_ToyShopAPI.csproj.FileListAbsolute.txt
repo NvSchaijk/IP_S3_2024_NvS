@@ -1,0 +1,7 @@
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.csproj.AssemblyReference.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.AssemblyInfoInputs.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.AssemblyInfo.cs
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.csproj.CoreCompileInputs.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI/obj/Debug/net7.0/IP_S3_NvS_ToyShopAPI.MvcApplicationPartsAssemblyInfo.cache

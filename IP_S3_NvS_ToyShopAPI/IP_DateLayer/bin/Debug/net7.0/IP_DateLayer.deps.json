@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "IP_DateLayer/1.0.0": {
+        "dependencies": {
+          "IP_Contract_Business_DataLayer": "1.0.0"
+        },
+        "runtime": {
+          "IP_DateLayer.dll": {}
+        }
+      },
+      "IP_Contract_Business_DataLayer/1.0.0": {
+        "runtime": {
+          "IP_Contract_Business_DataLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IP_DateLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IP_Contract_Business_DataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

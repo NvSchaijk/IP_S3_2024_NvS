@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_S3_NvS_ToyShopAPI", "IP_S3_NvS_ToyShopAPI\IP_S3_NvS_ToyShopAPI.csproj", "{143DCE32-0664-493D-ABC3-6A3BC7C71D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_Business", "IP_Business\IP_Business.csproj", "{666299EA-56FD-4046-A6F8-2CB49A221E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_DateLayer", "IP_DateLayer\IP_DateLayer.csproj", "{B3361EB3-8D0B-430E-9BA1-5A1EF6D6944C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_Contract_Business_DataLayer", "IP_Contract_Busness_DataLayer\IP_Contract_Business_DataLayer.csproj", "{1C07F81F-FF6E-4678-B8B8-723BB5C13CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_Contract_ToyShopAPI_Business", "IP_Contract_ToyShopAPI_Business\IP_Contract_ToyShopAPI_Business.csproj", "{E2BD2DB4-2B87-4D65-A9B4-D528E87A9C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_Models", "IP_Models\IP_Models.csproj", "{10D43178-2024-47AF-A721-B2767E22F0B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{143DCE32-0664-493D-ABC3-6A3BC7C71D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143DCE32-0664-493D-ABC3-6A3BC7C71D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143DCE32-0664-493D-ABC3-6A3BC7C71D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143DCE32-0664-493D-ABC3-6A3BC7C71D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666299EA-56FD-4046-A6F8-2CB49A221E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666299EA-56FD-4046-A6F8-2CB49A221E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666299EA-56FD-4046-A6F8-2CB49A221E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666299EA-56FD-4046-A6F8-2CB49A221E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3361EB3-8D0B-430E-9BA1-5A1EF6D6944C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3361EB3-8D0B-430E-9BA1-5A1EF6D6944C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3361EB3-8D0B-430E-9BA1-5A1EF6D6944C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3361EB3-8D0B-430E-9BA1-5A1EF6D6944C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C07F81F-FF6E-4678-B8B8-723BB5C13CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C07F81F-FF6E-4678-B8B8-723BB5C13CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C07F81F-FF6E-4678-B8B8-723BB5C13CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C07F81F-FF6E-4678-B8B8-723BB5C13CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BD2DB4-2B87-4D65-A9B4-D528E87A9C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BD2DB4-2B87-4D65-A9B4-D528E87A9C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BD2DB4-2B87-4D65-A9B4-D528E87A9C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BD2DB4-2B87-4D65-A9B4-D528E87A9C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D43178-2024-47AF-A721-B2767E22F0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D43178-2024-47AF-A721-B2767E22F0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D43178-2024-47AF-A721-B2767E22F0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D43178-2024-47AF-A721-B2767E22F0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88815C1E-EE2C-4BA8-A90D-EA5B81DE7A36}
+	EndGlobalSection
+EndGlobal

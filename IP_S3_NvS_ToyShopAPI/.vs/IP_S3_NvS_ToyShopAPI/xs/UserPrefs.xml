@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{143DCE32-0664-493D-ABC3-6A3BC7C71D02}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IP_DateLayer/Repo's/TestRepo.cs">
+    <Files>
+      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.Development.json" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.json" Line="12" Column="2" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Program.cs" Line="25" Column="4" />
+      <File FileName="IP_DateLayer/ToyShopAPIDBContext.cs" Line="22" Column="43" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/HomeController.cs" Line="18" Column="25" />
+      <File FileName="IP_Models/Models/Test.cs" Line="8" Column="39" />
+      <File FileName="IP_Business/Test.cs" Line="18" Column="1" />
+      <File FileName="IP_Contract_ToyShopAPI_Business/interfaces/ITestComponent.cs" Line="16" Column="44" />
+      <File FileName="IP_DateLayer/Repo's/TestRepo.cs" Line="21" Column="49" />
+      <File FileName="IP_Models/DTO's/TestDTO.cs" Line="12" Column="1" />
+      <File FileName="IP_Contract_Busness_DataLayer/interfaces/ITestRepo.cs" Line="19" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IP_S3_NvS_ToyShopAPI" expanded="True">
+            <Node name="IP_Contract_ToyShopAPI_Business">
+              <Node name="interfaces" expanded="True" />
+            </Node>
+            <Node name="IP_Models">
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="IP_S3_NvS_ToyShopAPI">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.IP__S3__NvS__ToyShopAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IP__Models FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

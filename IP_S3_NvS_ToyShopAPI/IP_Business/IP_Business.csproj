@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>IP_Business</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IP_Contract_ToyShopAPI_Business\IP_Contract_ToyShopAPI_Business.csproj" />
+    <ProjectReference Include="..\IP_Contract_Busness_DataLayer\IP_Contract_Business_DataLayer.csproj" />
+    <ProjectReference Include="..\IP_Models\IP_Models.csproj" />
+  </ItemGroup>
+</Project>
