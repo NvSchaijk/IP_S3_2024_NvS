@@ -1,8 +1,11 @@
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_DateLayer.deps.json
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_DateLayer.runtimeconfig.json
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_DateLayer.dll
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_DateLayer.pdb
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_Contract_Business_DataLayer.dll
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_Models.dll
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_Contract_Business_DataLayer.pdb
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/bin/Debug/net7.0/IP_Models.pdb
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.csproj.AssemblyReference.cache
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.GeneratedMSBuildEditorConfig.editorconfig
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.AssemblyInfoInputs.cache
@@ -12,4 +15,5 @@
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.dll
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/refint/IP_DateLayer.dll
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.pdb
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/IP_DateLayer.genruntimeconfig.cache
 /Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_DateLayer/obj/Debug/net7.0/ref/IP_DateLayer.dll

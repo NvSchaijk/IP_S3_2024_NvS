@@ -1,0 +1,12 @@
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/bin/Debug/net7.0/IP_Models.deps.json
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/bin/Debug/net7.0/IP_Models.dll
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/bin/Debug/net7.0/IP_Models.pdb
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.csproj.AssemblyReference.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.AssemblyInfoInputs.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.AssemblyInfo.cs
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.csproj.CoreCompileInputs.cache
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.dll
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/refint/IP_Models.dll
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/IP_Models.pdb
+/Users/nielsvanschaijk/Documents/GitHub/IP_S3_2024_NvS/IP_S3_NvS_ToyShopAPI/IP_Models/obj/Debug/net7.0/ref/IP_Models.dll

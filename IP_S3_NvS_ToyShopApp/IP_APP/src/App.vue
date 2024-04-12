@@ -1,12 +1,15 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test.vue';
+import BrandCRUD from './components/BrandCRUD.vue';
 </script>
 
 <template>
   <HelloWorld msg="this is very cool" />
 <br/>
   <Test/>
+<br/>
+  <BrandCRUD/>
 </template>
 
 <style scoped>

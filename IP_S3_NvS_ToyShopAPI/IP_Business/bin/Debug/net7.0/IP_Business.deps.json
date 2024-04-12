@@ -9,20 +9,32 @@
       "IP_Business/1.0.0": {
         "dependencies": {
           "IP_Contract_Business_DataLayer": "1.0.0",
-          "IP_Contract_ToyShopAPI_Business": "1.0.0"
+          "IP_Contract_ToyShopAPI_Business": "1.0.0",
+          "IP_Models": "1.0.0"
         },
         "runtime": {
           "IP_Business.dll": {}
         }
       },
       "IP_Contract_Business_DataLayer/1.0.0": {
+        "dependencies": {
+          "IP_Models": "1.0.0"
+        },
         "runtime": {
           "IP_Contract_Business_DataLayer.dll": {}
         }
       },
       "IP_Contract_ToyShopAPI_Business/1.0.0": {
+        "dependencies": {
+          "IP_Models": "1.0.0"
+        },
         "runtime": {
           "IP_Contract_ToyShopAPI_Business.dll": {}
+        }
+      },
+      "IP_Models/1.0.0": {
+        "runtime": {
+          "IP_Models.dll": {}
         }
       }
     }
@@ -39,6 +51,11 @@
       "sha512": ""
     },
     "IP_Contract_ToyShopAPI_Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IP_Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
