@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test.vue';
 import BrandCRUD from './components/BrandCRUD.vue';
+import CategoryCRUD from './components/CategoryCRUD.vue';
 </script>
 
 <template>
@@ -10,6 +11,8 @@ import BrandCRUD from './components/BrandCRUD.vue';
   <Test/>
 <br/>
   <BrandCRUD/>
+  <br/>
+  <CategoryCRUD/>
 </template>
 
 <style scoped>
