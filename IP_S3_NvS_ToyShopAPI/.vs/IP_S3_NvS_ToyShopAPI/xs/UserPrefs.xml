@@ -1,72 +1,35 @@
-﻿<Properties StartupConfiguration="{143DCE32-0664-493D-ABC3-6A3BC7C71D02}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IP_UnitTests/UnitTest1.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/7.0.316/Roslyn/Microsoft.CSharp.Core.targets">
     <Files>
-      <File FileName="IP_Contract_Busness_DataLayer/interfaces/IItemRepo.cs" Line="16" Column="39" />
-      <File FileName="IP_Contract_Busness_DataLayer/interfaces/IBrandRepo.cs" Line="19" Column="2" />
-      <File FileName="IP_DateLayer/Repo's/ItemRepo.cs" Line="63" Column="59" />
-      <File FileName="IP_DateLayer/Repo's/BrandRepo.cs" Line="72" Column="10" />
-      <File FileName="IP_Contract_ToyShopAPI_Business/interfaces/IItemComponent.cs" Line="16" Column="31" />
-      <File FileName="IP_Contract_ToyShopAPI_Business/interfaces/IBrandComponent.cs" Line="16" Column="54" />
-      <File FileName="IP_Business/Components/ItemComponent.cs" Line="24" Column="62" />
-      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/BrandController.cs" Line="77" Column="1" />
-      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.Development.json" Line="10" Column="1" />
-      <File FileName="IP_S3_NvS_ToyShopAPI/Program.cs" Line="39" Column="71" />
-      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.314/Microsoft.Common.CurrentVersion.targets" />
-      <File FileName="IP_DateLayer/ToyShopAPIDBContext.cs" Line="99" Column="1" />
-      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.json" Line="1" Column="1" />
-      <File FileName="IP_Business/Components/BrandComponent.cs" Line="73" Column="1" />
-      <File FileName="IP_DateLayer/Repo's/CategoryRepo.cs" Line="74" Column="18" />
-      <File FileName="IP_Contract_ToyShopAPI_Business/interfaces/ICategoryComponent.cs" Line="8" Column="49" />
-      <File FileName="IP_Contract_Busness_DataLayer/interfaces/ICategoryRepo.cs" Line="20" Column="1" />
-      <File FileName="IP_DateLayer/Repo's/Category_ItemRepo.cs" Line="9" Column="25" />
-      <File FileName="IP_Contract_Busness_DataLayer/interfaces/ICategory_ItemRepo.cs" Line="17" Column="6" />
-      <File FileName="IP_Business/Components/CategoryComponent.cs" Line="52" Column="44" />
-      <File FileName="IP_Models/Models/Brand.cs" Line="6" Column="39" />
-      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/CategoryController.cs" Line="72" Column="14" />
-      <File FileName="IP_Models/DTO's/CategoryDTO.cs" Line="6" Column="36" />
-      <File FileName="IP_Models/Models/Category.cs" Line="6" Column="42" />
-      <File FileName="IP_Models/Models/Category_Item.cs" Line="6" Column="47" />
-      <File FileName="IP_Models/Models/Item.cs" Line="6" Column="38" />
-      <File FileName="IP_Models/DTO's/BrandDTO.cs" Line="1" Column="1" />
-      <File FileName="IP_Models/DTO's/Category_ItemDTO.cs" Line="1" Column="1" />
-      <File FileName="IP_UnitTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.Development.json" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/appsettings.json" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/BrandController.cs" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/CategoryController.cs" />
+      <File FileName="IP_DateLayer/Repo's/ItemRepo.cs" />
+      <File FileName="IP_Business/Components/ItemComponent.cs" />
+      <File FileName="IP_Business/Components/CategoryComponent.cs" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Program.cs" />
+      <File FileName="IP_Contract_Busness_DataLayer/interfaces/IItemRepo.cs" />
+      <File FileName="IP_Contract_ToyShopAPI_Business/interfaces/IItemComponent.cs" />
+      <File FileName="IP_Contract_Busness_DataLayer/interfaces/ICategory_ItemRepo.cs" />
+      <File FileName="IP_DateLayer/Repo's/Category_ItemRepo.cs" />
+      <File FileName="IP_DateLayer/Repo's/CategoryRepo.cs" />
+      <File FileName="IP_S3_NvS_ToyShopAPI/Controllers/ItemController.cs" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.316/Roslyn/Microsoft.CSharp.Core.targets" Line="80" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="IP_S3_NvS_ToyShopAPI" expanded="True">
-            <Node name="IP_Business" expanded="True">
-              <Node name="Components" expanded="True" />
-            </Node>
-            <Node name="IP_Contract_Business_DataLayer" expanded="True">
-              <Node name="interfaces" expanded="True" />
-            </Node>
-            <Node name="IP_Contract_ToyShopAPI_Business" expanded="True">
-              <Node name="interfaces" expanded="True" />
-            </Node>
-            <Node name="IP_DateLayer" expanded="True">
-              <Node name="Repo's" expanded="True" />
-            </Node>
-            <Node name="IP_Models" expanded="True">
-              <Node name="DTO's" expanded="True" />
-              <Node name="Models" expanded="True" />
-            </Node>
-            <Node name="IP_S3_NvS_ToyShopAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-            <Node name="IP_UnitTests" expanded="True" />
-          </Node>
+          <Node name="IP_S3_NvS_ToyShopAPI" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.IP__UnitTests FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.IP__S3__NvS__ToyShopAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

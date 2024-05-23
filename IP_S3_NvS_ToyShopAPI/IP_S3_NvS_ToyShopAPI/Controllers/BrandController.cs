@@ -64,7 +64,7 @@ namespace IP_S3_NvS_ToyShopAPI.Controllers
             }
             return BadRequest("something went wrong updating the brand");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult<IEnumerable<Brand>>> DeleteBrand(int id)
         {
             IEnumerable<Brand> brands = await _BrandComponent.DeleteBrand(id);

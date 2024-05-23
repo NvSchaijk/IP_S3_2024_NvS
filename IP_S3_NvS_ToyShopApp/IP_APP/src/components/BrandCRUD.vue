@@ -3,19 +3,22 @@
     <table>
         <thead>
             <tr>
-            <th>BrandName</th><th>BrandDescription</th>
+            <th>BrandName</th><th>BrandDescription</th><th><router-link to="/BrandC" class="btn btn-primary">Create</router-link></th>
         </tr>
         </thead>
-        <tbody>
-            <tr v-for="p in posts" :key="p.id">
-                <td>{{ p.BrandName }}</td> <td>{{ p.BrandDescription }}</td>
+        <tbody v-if="this.posts.length > 0">
+            <tr v-for="p in posts" :key="p.BrandID">
+                <td>{{ p.BrandName }}</td> 
+                <td>{{ p.BrandDescription }}</td> 
+                <td><router-link :to="'/BrandU/'+p.BrandID" class="btn btn-warning">update</router-link></td>
+                <td><button type="button" class="btn btn-danger" @click="DeleteBrand(p.BrandID)">Delete</button></td>
             </tr>
         </tbody>
     </table>
 </template>
 
 <script>
-import api from '../API/api'
+import api from '@/API/api'
 export default{
     data()
     {
@@ -24,9 +27,23 @@ export default{
         }
     },
     mounted() {
-        api.get('Brand')
-        .then(response => this.posts = response.data)
+        this.GetBrands();
     },
+    methods:{
+        GetBrands(){
+            api.get('Brand')
+        .then(response => this.posts = response.data)
+        },
+        DeleteBrand(Brandid){
+            if (confirm('Are you sure?')) {
+                console.log(Brandid)
+                api.delete(`Brand/${Brandid}`)
+                .then(res => this.posts = res.data)
+                .catch(err => console.log(err));
+            };
+        }
+        
+    }
 }
 
 </script>

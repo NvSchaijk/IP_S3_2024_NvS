@@ -1,31 +1,25 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/Test.vue';
-import BrandCRUD from './components/BrandCRUD.vue';
-import CategoryCRUD from './components/CategoryCRUD.vue';
-</script>
-
 <template>
-  <HelloWorld msg="this is very cool" />
-<br/>
-  <Test/>
-<br/>
-  <BrandCRUD/>
-  <br/>
-  <CategoryCRUD/>
+  <div id="app">
+    <header>
+      <div class="title">
+        <h1>My Vue App</h1>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="sidebar">
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'home'}">Home</router-link>
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'itemcrud'}">Item</router-link>
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'brandcrud'}">Brand</router-link>
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'categorycrud'}">Category</router-link>
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'about'}">About</router-link>
+    </div>
+    <div class="content">
+      <router-view/>
+    </div>
+  </div>
+    </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+import {RouterLink, RouterView} from 'vue-router'
+</script>

@@ -1,12 +1,3 @@
-<script setup>
-import { ref} from "vue";
-import {useStorage} from '@vueuse/core'
-
-const text = useStorage('vue-use-local-storage');
-
-const text2 = ref("");
-</script>
-
 <template>
   <h1>Test Text</h1>
   <p>
@@ -19,8 +10,15 @@ const text2 = ref("");
     <br> {{ text2 }}
   </p>
 <input v-model="text2" placeholder="edit me" />
+<br>
+
 </template>
 
-<style>
+<script>
+import { ref} from "vue";
+import {useStorage} from '@vueuse/core'
 
-</style>
+const text = useStorage('vue-use-local-storage');
+const text2 = ref("");
+
+</script>

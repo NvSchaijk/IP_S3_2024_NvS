@@ -36,7 +36,7 @@ builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 builder.Services.AddScoped<ICategoryComponent, CategoryComponent>();
 builder.Services.AddScoped<IItemRepo, ItemRepo>();
 builder.Services.AddScoped<IItemComponent, ItemComponent>();
-//builder.Services.AddScoped<ICategory_ItemRepo, Category_ItemRepo>();
+builder.Services.AddScoped<ICategory_ItemRepo, Category_ItemRepo>();
 
 
 //JSON serializer

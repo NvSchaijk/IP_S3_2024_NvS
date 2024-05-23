@@ -15,6 +15,15 @@
     <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
     <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IP_Business\IP_Business.csproj" />
+    <ProjectReference Include="..\IP_Contract_Busness_DataLayer\IP_Contract_Business_DataLayer.csproj" />
+    <ProjectReference Include="..\IP_DateLayer\IP_DateLayer.csproj" />
+    <ProjectReference Include="..\IP_Contract_ToyShopAPI_Business\IP_Contract_ToyShopAPI_Business.csproj" />
+    <ProjectReference Include="..\IP_Models\IP_Models.csproj" />
+    <ProjectReference Include="..\IP_S3_NvS_ToyShopAPI\IP_S3_NvS_ToyShopAPI.csproj" />
+  </ItemGroup>
 </Project>

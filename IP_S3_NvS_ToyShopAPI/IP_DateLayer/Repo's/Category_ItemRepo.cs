@@ -1,10 +1,11 @@
 ﻿using System;
+using IP_Contract_Business_DataLayer.interfaces;
 using IP_Models.DTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace IP_DateLayer.Repos
 {
-	public class Category_ItemRepo
+	public class Category_ItemRepo : ICategory_ItemRepo
 	{
         private readonly ToyShopAPIDBContext _dbContext;
 

@@ -18,6 +18,8 @@ namespace IP_Contract_ToyShopAPI_Business.interfaces
         Task<bool> AddItemToCategory(Category_Item category_item);
 
         Task<bool> RemoveItemFromCategory(int relationid);
+
+        Task<IEnumerable<Category>> GetCategoriesByItemId(int id);
     }
 }
 

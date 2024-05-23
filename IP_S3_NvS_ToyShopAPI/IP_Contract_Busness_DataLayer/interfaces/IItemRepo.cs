@@ -6,14 +6,10 @@ namespace IP_Contract_Business_DataLayer.interfaces
 	public interface IItemRepo
 	{
         Task<IEnumerable<ItemDTO>> GetItems();
-
-        Task<ItemDTO?> GetItemById(int id);
-
-        Task<bool> CreateItem(ItemDTO order);
-
-        Task<bool> UpdateItem(ItemDTO test);
-
+        Task<ItemDTO> GetItemById(int id);
+        Task<bool> CreateItem(ItemDTO item);
         Task<bool> DeleteItem(int id);
+        Task<bool> UpdateItem(ItemDTO item);
     }
 }
 

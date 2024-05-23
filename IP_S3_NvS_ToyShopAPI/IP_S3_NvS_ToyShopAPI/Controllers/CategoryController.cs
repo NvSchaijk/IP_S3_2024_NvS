@@ -52,7 +52,7 @@ namespace IP_S3_NvS_ToyShopAPI.Controllers
             {
                 return Ok(categories);
             }
-            return BadRequest("something went wrong adding the brand");
+            return BadRequest("something went wrong adding the category");
         }
         [HttpPatch]
         public async Task<ActionResult<IEnumerable<Category>>> UpdateBrand(Category category)
@@ -62,17 +62,17 @@ namespace IP_S3_NvS_ToyShopAPI.Controllers
             {
                 return Ok(categories);
             }
-            return BadRequest("something went wrong updating the brand");
+            return BadRequest("something went wrong updating the category");
         }
-        [HttpDelete]
-        public async Task<ActionResult<IEnumerable<Brand>>> DeleteBrand(int id)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<IEnumerable<Category>>> DeleteCategory(int id)
         {
             IEnumerable<Category> categories = await _CategoryComponent.DeleteCategory(id);
             if (categories != null)
             {
                 return Ok(categories);
             }
-            return BadRequest("something went wrong updating the brand");
+            return BadRequest("something went wrong updating the category");
         }
 
     }
