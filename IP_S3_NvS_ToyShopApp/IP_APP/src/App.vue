@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="title">
-        <h1>My Vue App</h1>
+        <h1>TOY STORE MANAGER</h1>
       </div>
     </header>
     <div class="main-container">
