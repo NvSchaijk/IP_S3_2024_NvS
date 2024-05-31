@@ -1,5 +1,7 @@
-name: .NET Core CI/CD
+# Name of the workflow
+name: .NET API CI
 
+# Triggers the workflow on push or pull request events targeting the 'main' branch
 on:
   push:
     branches:
@@ -8,48 +10,44 @@ on:
     branches:
       - main
 
+# Define the jobs to be run
 jobs:
   build:
-
+    # Specify the type of runner to use
     runs-on: ubuntu-latest
 
     steps:
+    # Check out the repository code
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
+    # Setup .NET Core SDK version
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '7.0.x' # Use the required .NET version
+        dotnet-version: '7.0.x'  # Replace with the .NET SDK version you need
 
-    - name: Install dependencies
+    # Restore dependencies
+    - name: Restore dependencies
       run: dotnet restore
 
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
+    # Build the application
+    - name: Build the application
+      run: dotnet build --configuration Release --no-restore
 
-    - name: Run tests
-      run: dotnet test --no-restore --verbosity normal --configuration Release
+    # Run unit tests
+    - name: Run unit tests
+      run: dotnet test --configuration Release --no-build --verbosity normal
 
-  deploy:
+    # Publish the application
+    - name: Publish the application
+      run: dotnet publish --configuration Release --no-build --output ./publish
 
-    runs-on: ubuntu-latest
-    needs: build
+    # Uncomment and configure the following steps if you want to deploy your application
+    # - name: Deploy to Azure Web App
+    #   uses: azure/webapps-deploy@v2
+    #   with:
+    #     app-name: <YOUR_WEB_APP_NAME>  # Replace with your Azure Web App name
+    #     slot-name: <YOUR_SLOT_NAME>  # Optional: replace with your slot name (defaults to 'production')
+    #     publish-profile: ${{ secrets.AzureAppService_PublishProfile }}  # Make sure to set this secret in your GitHub repository
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '7.0.x' # Use the required .NET version
-
-    - name: Install dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
-
-    - name: Deploy
-      run: echo "Deploying the project..." # Replace with actual deploy commands
