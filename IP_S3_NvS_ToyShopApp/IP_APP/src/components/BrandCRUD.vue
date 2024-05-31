@@ -1,9 +1,9 @@
 <template>
     <h1>Brands</h1>
-    <table>
+    <table class="styled-table">
         <thead>
             <tr>
-            <th>BrandName</th><th>BrandDescription</th><th><router-link to="/BrandC" class="btn btn-primary">Create</router-link></th>
+            <th>BrandName</th><th>BrandDescription</th><th><router-link to="/BrandC" class="btn btn-primary">Create</router-link></th><th></th>
         </tr>
         </thead>
         <tbody v-if="this.posts.length > 0">

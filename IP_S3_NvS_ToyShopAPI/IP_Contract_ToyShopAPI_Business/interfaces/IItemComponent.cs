@@ -20,6 +20,14 @@ namespace IP_Contract_ToyShopAPI_Business.interfaces
         Task<bool> RemoveItemFromCategory(int relationid);
 
         Task<IEnumerable<Category>> GetCategoriesByItemId(int id);
+
+        Task<IEnumerable<Item>> GetBestSelling();
+
+        Task<IEnumerable<Item>> GetWorstSelling();
+
+        Task<IEnumerable<ItemProfit>> GetBestProfit();
+
+        Task<IEnumerable<ItemProfit>> GetWorstProfit();
     }
 }
 

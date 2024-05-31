@@ -7,7 +7,7 @@
     </header>
     <div class="main-container">
       <div class="sidebar">
-      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'home'}">Home</router-link>
+      <router-link class="btn btn-outline-dark btn-lg" :to="{name:'dashboard'}">DashBoard</router-link>
       <router-link class="btn btn-outline-dark btn-lg" :to="{name:'itemcrud'}">Item</router-link>
       <router-link class="btn btn-outline-dark btn-lg" :to="{name:'brandcrud'}">Brand</router-link>
       <router-link class="btn btn-outline-dark btn-lg" :to="{name:'categorycrud'}">Category</router-link>

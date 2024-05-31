@@ -1,9 +1,9 @@
 <template>
     <h1>Categories</h1>
-    <table>
+    <table class="styled-table">
         <thead>
             <tr>
-            <th>CategoryName</th><th>CategoryDescription</th><th><router-link to="/CategoryC" class="btn btn-primary">Create</router-link></th>
+            <th>CategoryName</th><th>CategoryDescription</th><th><router-link to="/CategoryC" class="btn btn-primary">Create</router-link></th><th></th>
         </tr>
         </thead>
         <tbody v-if="this.posts.length > 0">

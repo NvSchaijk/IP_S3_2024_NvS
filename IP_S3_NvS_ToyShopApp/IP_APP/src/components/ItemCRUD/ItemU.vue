@@ -12,8 +12,14 @@
             <th>Item Price</th> <th>Item Brand</th>
         </tr>
         <tr>
-            <td><input type="text" v-model="item.ItemPrice"></td> 
-            <td> <input type="text" v-model="item.BrandID"></td>
+            <td><input type="text" v-model="item.ItemPrice"></td>
+            <td>
+                <select v-model="item.BrandID">
+                    <option v-for="brand in brands" :key="brand.BrandID" :value="brand.BrandID">
+                        {{ brand.BrandName }}
+                    </option>
+                </select>
+            </td>
         </tr>
         <tr>
             <th>Item Quantity</th> <th>Item QuantitySold</th>
@@ -35,19 +41,26 @@ import api from '@/API/api.js'
 export default{
     data(){
         return{
-            item: []
+            item: [],
+            brands: []
         }
     },
     mounted()
     {
-        this.GetItem(this.$route.params.id)
-        console.warn(this.$route.params.id)
+        this.GetItem(this.$route.params.id);
+        this.GetBrands();
+        console.warn(this.$route.params.id);
     },
     methods: {
         GetItem(id)
         {
             api.get(`Item/${id}`)
             .then(response => [this.item = response.data, console.log(response.data)])
+        },
+        GetBrands()
+        {
+            api.get(`Brand`)
+            .then(response => [this.brands = response.data, console.log(response.data)])
         },
         updateItem(newitem)
         {

@@ -13,7 +13,13 @@
         </tr>
         <tr>
             <td><input type="text" v-model="item.itemPrice"></td> 
-            <td> <input type="text" v-model="item.brandID"></td>
+            <td>
+                <select v-model="item.brandID">
+                    <option v-for="brand in brands" :key="brand.BrandID" :value="brand.BrandID">
+                        {{ brand.BrandName }}
+                    </option>
+                </select>
+            </td>
         </tr>
         <tr>
             <th>Item Quantity</th> <th>Item QuantitySold</th>
@@ -36,15 +42,19 @@ export default{
     data(){
         return{
             item: {
-                itemID: 0,
-                brandID: 0,
+                brandID: null,
                 itemName: "",
                 itemDescription: "",
-                itemPrice: 0,
-                itemQuantity: 0,
-                itemQuantitySold: 0
-            }
+                itemPrice: null,
+                itemQuantity: null,
+                itemQuantitySold: null
+            },
+            brands: []
         }
+    },
+    mounted()
+    {
+        this.GetBrands();
     },
     methods: {
         createItem(newitem)
@@ -55,7 +65,12 @@ export default{
                 .then(res => [this.posts = res.data, this.$router.push({name: 'itemcrud'})])
                 .catch(err => console.log(err));
             };
-        }
+        },
+        GetBrands()
+        {
+            api.get(`Brand`)
+            .then(response => [this.brands = response.data, console.log(response.data)])
+        },
     }
 }
 </script>

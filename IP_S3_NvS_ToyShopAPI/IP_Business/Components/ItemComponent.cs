@@ -32,15 +32,6 @@ namespace IP_Business.Components
             var i = await _repo.GetItemById(id);
             if (i != null)
             {
-                //Brand brand = new Brand();
-                //BrandDTO brandDTO = await _brandRepo.GetBrandById(i.BrandID);
-                //if (brandDTO != null)
-                //{
-                //    brand.BrandID = brandDTO.BrandID;
-                //    brand.BrandDescription = brandDTO.BrandDescription;
-                //    brand.BrandName = brandDTO.BrandName;
-                //}
-
                 Item Item = new Item
                 {
                     ItemID = i.ItemID,
@@ -64,13 +55,6 @@ namespace IP_Business.Components
 
             foreach (var i in await _repo.GetItems())
             {
-                //BrandDTO brandDTO = await _brandRepo.GetBrandById(i.BrandID);
-                //Brand brand = new Brand
-                //{
-                //    BrandID = brandDTO.BrandID,
-                //    BrandDescription = brandDTO.BrandDescription,
-                //    BrandName = brandDTO.BrandName
-                //};
                 Item Item = new Item
                 {
                     ItemID = i.ItemID,
@@ -158,6 +142,96 @@ namespace IP_Business.Components
 
             return categories;
 
+        }
+        public async Task<IEnumerable<Item>> GetBestSelling()
+        {
+            List<Item> Itemlist = new List<Item>();
+            foreach (var i in await _repo.GetItems())
+            {
+                Item Item = new Item
+                {
+                    ItemID = i.ItemID,
+                    ItemName = i.ItemName,
+                    ItemDescription = i.ItemDescription,
+                    ItemPrice = i.ItemPrice,
+                    ItemQuantity = i.ItemQuantity,
+                    ItemQuantitySold = i.ItemQuantitySold,
+                    BrandID = i.BrandID
+
+                };
+                Itemlist.Add(Item);
+            }
+            return Itemlist.OrderByDescending(item => item.ItemQuantitySold)
+                        .Take(5)
+                        .ToList();
+        }
+        public async Task<IEnumerable<Item>> GetWorstSelling()
+        {
+            List<Item> Itemlist = new List<Item>();
+            foreach (var i in await _repo.GetItems())
+            {
+                Item Item = new Item
+                {
+                    ItemID = i.ItemID,
+                    ItemName = i.ItemName,
+                    ItemDescription = i.ItemDescription,
+                    ItemPrice = i.ItemPrice,
+                    ItemQuantity = i.ItemQuantity,
+                    ItemQuantitySold = i.ItemQuantitySold,
+                    BrandID = i.BrandID
+
+                };
+                Itemlist.Add(Item);
+            }
+            return Itemlist.OrderBy(item => item.ItemQuantitySold)
+                        .Take(5)
+                        .ToList();
+        }
+        public async Task<IEnumerable<ItemProfit>> GetBestProfit()
+        {
+            List<ItemProfit> Itemlist = new List<ItemProfit>();
+            foreach (var i in await _repo.GetItems())
+            {
+                ItemProfit Item = new ItemProfit
+                {
+                    ItemID = i.ItemID,
+                    ItemName = i.ItemName,
+                    ItemDescription = i.ItemDescription,
+                    ItemPrice = i.ItemPrice,
+                    ItemQuantity = i.ItemQuantity,
+                    ItemQuantitySold = i.ItemQuantitySold,
+                    BrandID = i.BrandID,
+                    Totalprofit = i.ItemPrice * i.ItemQuantitySold
+
+                };
+                Itemlist.Add(Item);
+            }
+            return Itemlist.OrderByDescending(item => item.Totalprofit)
+                        .Take(5)
+                        .ToList();
+        }
+        public async Task<IEnumerable<ItemProfit>> GetWorstProfit()
+        {
+            List<ItemProfit> Itemlist = new List<ItemProfit>();
+            foreach (var i in await _repo.GetItems())
+            {
+                ItemProfit Item = new ItemProfit
+                {
+                    ItemID = i.ItemID,
+                    ItemName = i.ItemName,
+                    ItemDescription = i.ItemDescription,
+                    ItemPrice = i.ItemPrice,
+                    ItemQuantity = i.ItemQuantity,
+                    ItemQuantitySold = i.ItemQuantitySold,
+                    BrandID = i.BrandID,
+                    Totalprofit = i.ItemPrice * i.ItemQuantitySold
+
+                };
+                Itemlist.Add(Item);
+            }
+            return Itemlist.OrderBy(item => item.Totalprofit)
+                        .Take(5)
+                        .ToList();
         }
     }
 }
