@@ -22,12 +22,14 @@ jobs:
         run: dotnet restore IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln
       
       - name: Install Roslyn Analyzers
-        run: dotnet tool install --global Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
+        run: |
+          dotnet new tool-manifest --force
+          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
 
       - name: Build solution and run analyzers
         run: |
           dotnet build IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --configuration Release
-          dotnet analyze IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --configuration Release
+          dotnet format IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --check --severity error
 
       - name: Install dotnet-secure
         run: dotnet tool install -g dotnet-secure
@@ -48,6 +50,6 @@ jobs:
           curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
           chmod +x ./cc-test-reporter
           ./cc-test-reporter before-build
-          dotnet test /IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+          dotnet test IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
           ./cc-test-reporter upload-coverage -i codeclimate.json
