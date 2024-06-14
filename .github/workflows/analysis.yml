@@ -19,9 +19,10 @@ jobs:
           dotnet-version: '7.0.x'  # Adjust to your .NET SDK version
       
       - name: Install Roslyn Analyzers
-        run: dotnet new tool-manifest
-             && dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0 --tool-path .dotnet/tools
-
+        run: |
+          dotnet new tool-manifest
+          dotnet tool install --global Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
+      
       - name: Run Roslyn Analyzers
         run: dotnet analyze
 
@@ -47,4 +48,3 @@ jobs:
           dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
           ./cc-test-reporter upload-coverage -i codeclimate.json
-
