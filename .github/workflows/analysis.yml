@@ -25,7 +25,7 @@ jobs:
         run: |
           cd IP_S3_NvS_ToyShopAPI
           dotnet new tool-manifest --force
-          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 3.3.4
+          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 4.8.0
 
       - name: Build solution and run analyzers
         run: |
