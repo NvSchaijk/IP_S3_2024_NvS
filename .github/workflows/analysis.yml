@@ -20,18 +20,7 @@ jobs:
       
       - name: Restore dependencies
         run: dotnet restore IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln
-
-      - name: Upload to CodeClimate
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_ACCESS_TOKEN }}
-        run: |
-          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-          chmod +x ./cc-test-reporter
-          ./cc-test-reporter before-build
-          dotnet test /IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-          ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
-          ./cc-test-reporter upload-coverage -i codeclimate.json
-          
+        
       - name: Install dotnet-secure
         run: dotnet tool install -g dotnet-secure
 
@@ -44,6 +33,18 @@ jobs:
       - name: Build with StyleCop enabled
         run: dotnet build IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:StyleCopEnabled=true /p:StyleCopConfig=stylecop.json
 
+
+      - name: Upload to CodeClimate
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_ACCESS_TOKEN }}
+        run: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+          dotnet test /IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+          ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
+          ./cc-test-reporter upload-coverage -i codeclimate.json
+          
       - name: Install Roslyn Analyzers
         run: |
           cd IP_S3_NvS_ToyShopAPI
