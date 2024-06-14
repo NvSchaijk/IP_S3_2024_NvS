@@ -18,13 +18,16 @@ jobs:
         with:
           dotnet-version: '7.0.x'  # Adjust to your .NET SDK version
       
-      - name: Install Roslyn Analyzers
-        run: |
-          dotnet new tool-manifest
-          dotnet tool install --global Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
+      - name: Restore dependencies
+        run: dotnet restore IP_S3_NvS_ToyShopAPI.sln
       
-      - name: Run Roslyn Analyzers
-        run: dotnet analyze
+      - name: Install Roslyn Analyzers
+        run: dotnet tool install --global Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
+
+      - name: Build solution and run analyzers
+        run: |
+          dotnet build IP_S3_NvS_ToyShopAPI.sln --configuration Release
+          dotnet analyze IP_S3_NvS_ToyShopAPI.sln --configuration Release
 
       - name: Install dotnet-secure
         run: dotnet tool install -g dotnet-secure
@@ -35,8 +38,8 @@ jobs:
       - name: Install StyleCop
         run: dotnet add package StyleCop.Analyzers --version 3.1.2
 
-      - name: Run StyleCop
-        run: dotnet build /p:StyleCopEnabled=true /p:StyleCopConfig=stylecop.json
+      - name: Build with StyleCop enabled
+        run: dotnet build IP_S3_NvS_ToyShopAPI.sln /p:StyleCopEnabled=true /p:StyleCopConfig=stylecop.json
 
       - name: Upload to CodeClimate
         env:
@@ -45,6 +48,6 @@ jobs:
           curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
           chmod +x ./cc-test-reporter
           ./cc-test-reporter before-build
-          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+          dotnet test IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
           ./cc-test-reporter upload-coverage -i codeclimate.json
