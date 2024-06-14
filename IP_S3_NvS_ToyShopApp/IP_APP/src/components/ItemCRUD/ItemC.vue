@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>
-                <button @click="createItem(item)">Create item</button>
+                <button class="btn btn-primary" @click="createItem(item)">Create item</button>
             </td>
         </tr>
     </table>

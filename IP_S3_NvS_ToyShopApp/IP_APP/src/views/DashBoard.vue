@@ -56,7 +56,7 @@
               <tr v-for="bp in BestProfit" :key="bp.ItemID">
                 <td>{{ bp.ItemName }}</td>
                 <td>{{ bp.ItemDescription }}</td>
-                <td>{{ bp.Totalprofit }}</td>
+                <td> $ {{ bp.Totalprofit }}</td>
               </tr>
             </tbody>
           </table>
@@ -75,7 +75,7 @@
               <tr v-for="wp in WorstProfit" :key="wp.ItemID">
                 <td>{{ wp.ItemName }}</td>
                 <td>{{ wp.ItemDescription }}</td>
-                <td>{{ wp.Totalprofit }}</td>
+                <td>$ {{ wp.Totalprofit }}</td>
               </tr>
             </tbody>
           </table>

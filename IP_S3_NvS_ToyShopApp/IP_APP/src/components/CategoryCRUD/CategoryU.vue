@@ -10,7 +10,7 @@
     </tr>
     <tr>
         <td>
-            <button @click="updateCategory(Category)">Update Category</button>
+            <button class="btn btn-warning" @click="updateCategory(Category)">Update Category</button>
         </td>
     </tr>
 </table>

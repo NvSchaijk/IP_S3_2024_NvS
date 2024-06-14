@@ -10,7 +10,7 @@
         </tr>
         <tr>
             <td>
-                <button @click="createCategory(category)">Create category</button>
+                <button class="btn btn-primary" @click="createCategory(category)">Create category</button>
             </td>
         </tr>
     </table>

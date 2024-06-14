@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>
-                <button @click="updateItem(item)">Update Item</button>
+                <button class="btn btn-warning" @click="updateItem(item)">Update Item</button>
             </td>
         </tr>
     </table>

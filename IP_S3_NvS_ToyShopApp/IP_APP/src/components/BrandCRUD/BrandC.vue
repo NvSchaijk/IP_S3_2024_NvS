@@ -10,7 +10,7 @@
         </tr>
         <tr>
             <td>
-                <button @click="createBrand(brand)">Create Brand</button>
+                <button class="btn btn-primary" @click="createBrand(brand)">Create Brand</button>
             </td>
         </tr>
     </table>

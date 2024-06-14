@@ -3,7 +3,7 @@
     <table class="styled-table">
         <thead>
             <tr>
-            <th>ItemName</th><th>ItemDescription</th><th>Brand</th><th><router-link to="/ItemC" class="btn btn-primary">Create</router-link></th><th></th>
+            <th>ItemName</th><th>ItemDescription</th><th>Brand</th><th>Price</th><th><router-link to="/ItemC" class="btn btn-primary">Create</router-link></th><th></th>
         </tr>
         </thead>
         <tbody v-if="this.posts.length > 0">
@@ -11,6 +11,7 @@
                 <td>{{ p.ItemName }}</td> 
                 <td>{{ p.ItemDescription }}</td> 
                 <td>{{ getBrandName(p.BrandID) }}</td>
+                <tb>$ {{ p.ItemPrice }}</tb>
                 <td><router-link :to="'/ItemU/'+p.ItemID" class="btn btn-warning">update</router-link></td>
                 <td><button type="button" class="btn btn-danger" @click="DeleteItem(p.ItemID)">Delete</button></td>
             </tr>
