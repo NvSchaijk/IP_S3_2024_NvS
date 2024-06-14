@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'  # Adjust to your .NET SDK version
+          dotnet-version: '7.0.x'  # Adjust to your .NET SDK version
       
       - name: Install Roslyn Analyzers
         run: dotnet new tool-manifest
