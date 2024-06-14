@@ -23,7 +23,7 @@ jobs:
       
       - name: Install Roslyn Analyzers
         run: |
-          cd IP_S3_NvS_ToyShopAPI
+          cd IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln
           dotnet new tool-manifest --force
           dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
 
