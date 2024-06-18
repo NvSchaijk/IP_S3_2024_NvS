@@ -23,7 +23,18 @@ jobs:
         
       - name: Install dotnet-secure
         run: dotnet tool install -g dotnet-secure
+          
+      - name: Install Roslyn Analyzers
+        run: |
+          cd IP_S3_NvS_ToyShopAPI
+          dotnet new tool-manifest --force
+          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
 
+      - name: Build solution and run analyzers
+        run: |
+          dotnet build IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --configuration Release
+          dotnet format IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --check --severity error
+          
       - name: Run Security Code Scan
         run: dotnet-secure scan --severity High --quiet
 
@@ -44,15 +55,3 @@ jobs:
           dotnet test /IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           ./cc-test-reporter format-coverage -t opencover -o codeclimate.json
           ./cc-test-reporter upload-coverage -i codeclimate.json
-          
-      - name: Install Roslyn Analyzers
-        run: |
-          cd IP_S3_NvS_ToyShopAPI
-          dotnet new tool-manifest --force
-          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 7.1.0
-
-      - name: Build solution and run analyzers
-        run: |
-          dotnet build IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --configuration Release
-          dotnet format IP_S3_NvS_ToyShopAPI/IP_S3_NvS_ToyShopAPI.sln --check --severity error
-
